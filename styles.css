@@ -203,3 +203,60 @@ main {
     margin-top: 3px;
   }
 }
+/*FLOWER AND PLANT LOVER SECTION STYLING*/
+.flower-lover {
+  max-width: 1142px;
+  margin: 0 auto 0 auto;
+}
+.content-container {
+  display: flex;
+  align-items: center;
+  gap: 60px;
+  position: relative;
+}
+.flower-lover-title {
+  font-weight: bold;
+  font-size: 3.125rem;
+}
+.flower-lover-text {
+  font-size: 1.375rem;
+}
+.badge-container {
+  width: 286px;
+  height: 286px;
+  position: relative;
+  top: 159px;
+  left: 347px;
+  z-index: 1;
+}
+.badge-container img {
+  width: 100%;
+}
+/*FLOWER AND PLANT LOVER SECTION MOBILE RESPONSIVE*/
+@media screen and (max-width: 576px) {
+  .flower-lover {
+    margin-top: 42px;
+  }
+  .badge-container {
+    display: none;
+  }
+  .content-container {
+    flex-direction: column;
+    padding: 0 16px;
+    gap: 18px;
+  }
+  .content-container > img {
+    width: 100%;
+  }
+  .flower-lover-title {
+    font-size: 1.5rem;
+    margin-top: 0;
+  }
+  .flower-lover-text {
+    font-size: 0.875rem;
+  }
+  .flower-lover-content > ul {
+    margin: 0;
+    padding-left: 28px;
+  }
+}
