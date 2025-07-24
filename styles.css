@@ -23,9 +23,6 @@ body {
   padding: 0;
   font-family: "Inter", sans-serif;
 }
-.none {
-  display: none;
-}
 /*SHARED ITEMS*/
 .txt-clr-nav-a {
   color: #8987a1 !important;
@@ -35,6 +32,9 @@ body {
 }
 .header-clr {
   color: #e95a08;
+}
+.none {
+  display: none;
 }
 
 /*HEADER STYLING (1)*/
@@ -70,7 +70,7 @@ header {
   font-weight: bold;
   color: #252432;
 }
-/*BANNER/HERO SECTION STYLING*/
+/*Banner/Hero section styling*/
 .banner {
   display: flex;
   align-items: flex-end;
@@ -90,7 +90,7 @@ header {
   width: 100%;
   display: block;
 }
-/*HEADER SECTION RESPONSIVE*/
+/*HEADER SECTION RESPONSIVE (1)*/
 @media screen and (max-width: 576px) {
   header {
     margin-bottom: 65px;
@@ -190,7 +190,7 @@ main {
   cursor: pointer;
   margin-top: 25px;
 }
-/*OUR PLANT SECTION RESPONSIVE*/
+/*OUR PLANT SECTION RESPONSIVE (2)*/
 @media screen and (max-width: 576px) {
   .plant-item-list {
     grid-template-columns: repeat(2, 1fr);
@@ -237,13 +237,14 @@ main {
 .flower-lover-text:last-child {
   margin-bottom: 0;
 }
+
 .badge {
   width: 286px;
   height: 286px;
   position: absolute;
   top: -127px;
   left: 347px;
-  z-index: 1;
+  filter: drop-shadow(4px 10px 4px rgba(0, 0, 0, 0.4));
 }
 .badge img {
   width: 100%;
@@ -257,7 +258,7 @@ main {
     transform: rotate(360deg);
   }
 }
-/*FLOWER AND PLANT LOVER SECTION MOBILE RESPONSIVE*/
+/*FLOWER AND PLANT LOVER SECTION MOBILE RESPONSIVE (3)*/
 @media screen and (max-width: 576px) {
   .flower-lover {
     margin-top: 42px;
@@ -347,6 +348,7 @@ main {
 }
 .overlay-effect2 {
   border-radius: 22px;
+  height: 98.7%;
 }
 .overlay-effect h3,
 .overlay-effect2 h3 .overlay-effect3 h3 {
@@ -373,7 +375,7 @@ main {
   margin-top: 5px;
   font-family: "Inter", sans-serif;
 }
-/*LATEST DEAL SECTION RESPONSIVE*/
+/*LATEST DEAL SECTION RESPONSIVE (4)*/
 @media screen and (max-width: 576px) {
   .latest-deals {
     margin: 0;
@@ -426,7 +428,7 @@ main {
     font-family: "Inter", sans-serif;
   }
 }
-/*COLORFUL BUNCH STYLING*/
+/*COLORFUL BUNCH STYLING (5)*/
 .colorful-bunch {
   max-width: 1440px;
   margin: 130px auto 0 auto;
@@ -454,7 +456,17 @@ input {
   width: 644px;
   height: 50px;
   padding: 8px 20px;
+  font-size: 1rem;
+  font-family: "Inter", sans-serif;
+}
+input::placeholder {
+  font-family: "Inter", sans-serif;
+  font-size: 1rem;
+  color: rgba(0, 0, 0, 0.4);
+}
+input:focus {
   outline: none;
+  border: none;
 }
 .colorful-bunch-button {
   background-color: #e95a08;
@@ -465,9 +477,10 @@ input {
   font-weight: 600;
   font-size: 1rem;
 }
-/*COLORFUL BUNCH SECTION MOBILE RESPONSIVE*/
+/*COLORFUL BUNCH MOBILE RESPONSIVE (5)*/
 @media screen and (max-width: 576px) {
-  .input-container {
+  .input-container,
+  input {
     width: 100%;
   }
   .colorful-bunch {
@@ -485,7 +498,7 @@ input {
     font-size: 1.25rem;
   }
 }
-/*FOOTER SECTION STYLING*/
+/*FOOTER STYLING (6)*/
 footer {
   max-width: 1440px;
   margin: 0 auto;
@@ -514,6 +527,9 @@ footer {
   color: rgba(107, 114, 128, 1);
   font-size: 1rem;
 }
+.footer-link-list a:hover {
+  text-decoration: underline;
+}
 .footer-images {
   display: flex;
   gap: 24px;
@@ -525,7 +541,7 @@ footer {
   width: auto;
   height: auto;
 }
-/*FOOTER MOBILE RESPONSIVE*/
+/*FOOTER MOBILE RESPONSIVE (6)*/
 @media screen and (max-width: 576px) {
   .footer-container {
     flex-direction: column;
