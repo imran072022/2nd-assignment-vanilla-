@@ -590,7 +590,7 @@ footer {
     margin-top: 20px;
   }
   .footer-link-list {
-    row-gap: 20px;
+    row-gap: 30px;
   }
   .item1 {
     order: 1;
